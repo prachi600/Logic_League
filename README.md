@@ -9,7 +9,7 @@
 
 In real software projects, a small code change can have consequences far beyond the file being edited. A developer modifying an authentication helper, API response, database model, or shared utility may unknowingly affect downstream services, frontend screens, integrations, and tests.
 
-Existing code-review workflows usually show a *diff*—what lines changed—but do not clearly explain **why the change matters, what may be affected, or what should be tested next**. This becomes especially difficult for student teams, new contributors, and developers working in unfamiliar or large codebases. The result is slower reviews, missed regressions, incomplete tests, and low confidence in changes.
+Existing code-review workflows usually show a _diff_—what lines changed—but do not clearly explain **why the change matters, what may be affected, or what should be tested next**. This becomes especially difficult for student teams, new contributors, and developers working in unfamiliar or large codebases. The result is slower reviews, missed regressions, incomplete tests, and low confidence in changes.
 
 **How might we help developers understand the real impact of a code change before it becomes a bug?**
 
@@ -17,12 +17,12 @@ Existing code-review workflows usually show a *diff*—what lines changed—but 
 
 Current developer tools solve parts of the problem:
 
-| Solution type | What it does well | Gap TraceLens addresses |
-| --- | --- | --- |
-| GitHub/GitLab diffs | Shows exactly which lines changed | Does not explain downstream functional impact |
+| Solution type         | What it does well                           | Gap TraceLens addresses                                              |
+| --------------------- | ------------------------------------------- | -------------------------------------------------------------------- |
+| GitHub/GitLab diffs   | Shows exactly which lines changed           | Does not explain downstream functional impact                        |
 | Static-analysis tools | Finds syntax, type, and code-quality issues | Usually does not translate findings into a product-level explanation |
-| AI code assistants | Can summarize code and suggest edits | May make unverified claims and often lacks codebase-wide evidence |
-| Test-coverage tools | Reports what code was executed by tests | Does not identify which *new risks* a specific change introduces |
+| AI code assistants    | Can summarize code and suggest edits        | May make unverified claims and often lacks codebase-wide evidence    |
+| Test-coverage tools   | Reports what code was executed by tests     | Does not identify which _new risks_ a specific change introduces     |
 
 TraceLens brings these signals together and makes its conclusions **verifiable**: each impact claim is linked to the relevant dependency, code location, or test evidence.
 
@@ -78,15 +78,15 @@ Because AI can be incorrect, TraceLens does not present generated summaries as f
 
 ## Technology Stack
 
-| Layer | Proposed technology | Purpose |
-| --- | --- | --- |
-| Interface | React / Next.js | Pull-request dashboard and interactive impact map |
-| Backend | Python FastAPI or Node.js | Analysis API and report generation |
-| Code analysis | Tree-sitter, AST parsers, Git | Parse source code and diffs across languages |
-| Graph engine | Neo4j or NetworkX | Store and traverse code dependencies |
-| AI layer | Small LLM / hosted LLM API with RAG | Explain changes and check intent against code evidence |
-| Integrations | GitHub REST/GraphQL API | Access repositories, PR metadata, and test context |
-| Testing | Pytest / Jest | Validate analyzer rules and report output |
+| Layer         | Proposed technology                 | Purpose                                                |
+| ------------- | ----------------------------------- | ------------------------------------------------------ |
+| Interface     | React / Next.js                     | Pull-request dashboard and interactive impact map      |
+| Backend       | Python FastAPI or Node.js           | Analysis API and report generation                     |
+| Code analysis | Tree-sitter, AST parsers, Git       | Parse source code and diffs across languages           |
+| Graph engine  | Neo4j or NetworkX                   | Store and traverse code dependencies                   |
+| AI layer      | Small LLM / hosted LLM API with RAG | Explain changes and check intent against code evidence |
+| Integrations  | GitHub REST/GraphQL API             | Access repositories, PR metadata, and test context     |
+| Testing       | Pytest / Jest                       | Validate analyzer rules and report output              |
 
 ## Expected Impact
 
@@ -115,3 +115,7 @@ An initial working prototype can be built for JavaScript/TypeScript repositories
 ---
 
 **TraceLens — See beyond the diff. Understand the impact.**
+Team Name - TraceLens
+Team Memeber - Prachi Singh - Team Leader
+Sundaram Gupta
+Harsh Mishra
