@@ -115,7 +115,11 @@ An initial working prototype can be built for JavaScript/TypeScript repositories
 ---
 
 **TraceLens — See beyond the diff. Understand the impact.**
-Team Name - TraceLens
-Team Memeber - Prachi Singh - Team Leader.
-Sundaram Gupta.
-Harsh Mishra.
+
+**Team Name:** TraceLens Team
+
+**Members:**
+
+- Prachi Singh - Team Leader
+- Sundaram Gupta
+- Harsh Mishra
